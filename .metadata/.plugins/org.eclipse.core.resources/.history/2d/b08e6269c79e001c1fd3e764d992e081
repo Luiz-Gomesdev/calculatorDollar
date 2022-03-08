@@ -1,0 +1,17 @@
+package intities;
+
+public class CurrencyConverter {
+	
+	public double priceUs = 3.10;
+	public double units;
+	public double totalReal;
+	public double totalTax;
+	
+	public double converterReal() {
+		return priceUs * units;
+	}
+	
+	public double totalTax() {
+		return converterReal * 6 / 100;
+	}
+}

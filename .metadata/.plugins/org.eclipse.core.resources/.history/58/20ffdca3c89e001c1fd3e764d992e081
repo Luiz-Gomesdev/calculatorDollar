@@ -1,0 +1,18 @@
+package intities;
+
+public class CurrencyConverter {
+	
+	public double priceBr = 3.10;
+	public double units;
+	public double totalReal;
+	public double totalTax;
+	public double totalDollar;
+	
+	public double totalReal() {
+		return priceBr * units;
+	}
+	
+	public double totalTax() {
+		return totalReal * 6 / 100;
+	}
+}
